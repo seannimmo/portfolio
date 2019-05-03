@@ -39,13 +39,13 @@ body {
     text-align: center;
 }
 
-.skills {
+.home {
     display: flex;
     justify-content: space-between;
     padding-left: 15rem;
     padding-right: 15rem;
+    padding-bottom: 3rem;
     background-color: black;
-    
 }
 
 .discover {
@@ -54,7 +54,6 @@ body {
     flex-direction: column;
     color: white;
     text-align: center;
-
 }
 
 .circle {
@@ -65,11 +64,43 @@ body {
     height: 3rem;
     width: 6rem;
     border-radius: 0rem 0rem 6rem 6rem;
-    
-
 }
+
 p {
     font-size: 14px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+}
+
+.lang {
+    display:flex;
+    background-color: green;
+    font-size: 15px;
+    width: 20rem;
+    height: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.name {
+    width: 4rem;
+    height: 1rem;
+    margin: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+.progress {
+    background-color: blue;
+    width: 60%;
+    margin: 0;
 }
 
 
