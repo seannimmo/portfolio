@@ -114,6 +114,28 @@ p {
     margin: 0;
 }
 
+/***************
+*PORTFOLIO*
+**************/
+
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 40rem;
+    margin: auto;
+    background-color: black;
+
+}
+
+.inside {
+    background-color: white;
+    flex-basis: 25%;
+    height: 25%;
+    margin: 1rem;   
+}
 
 
 
