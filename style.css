@@ -57,6 +57,17 @@ body {
 
 }
 
+.circle {
+    background-color: white;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 3rem;
+    width: 6rem;
+    border-radius: 0rem 0rem 6rem 6rem;
+    
+
+}
 p {
     font-size: 14px;
 }
