@@ -2,11 +2,12 @@
     box-sizing: border-box;
 }
 
-$color_one: white;
+$color_one: #11007f;
 $color_two: black;
-$color_three: blue;
+$color_three: #6d7993;
+$color_four: #96858f;
 $text_color: white;
-$font_normal: "Merriweather";
+$font_normal: "Poppins";
 
 html {
     font-size: 18px;
@@ -19,12 +20,12 @@ body {
 
 nav {
     display: flex;
-    background-color: black;
+    background-color: $color_two;
     color: $text_color;
     justify-content: space-evenly;
     .item {
         flex: 1;
-        border: 1px solid white;
+        border: 1px solid $color_two;
         text-align: center;
         padding: .3rem;
         
@@ -36,15 +37,19 @@ nav {
 }
 
 .banner{
-    background-image: url("/img/trianglify.png");
+    background-color:$color_one;
     color: $text_color;
+    font-family: $font_normal;
+    font-size: 3rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
     height: 20rem;
     padding-top: 7rem;
     text-align: center;
 }
-
+h1 {
+    font-family: "Poppins";
+}
 /******************
         INFO
 *******************/
@@ -53,7 +58,7 @@ nav {
     display: flex;
     justify-content: center;
     padding-bottom: 3rem;
-    background-color: black;
+    background-color: $color_four;
     height: 100vh;
 
     .discover {
@@ -90,7 +95,7 @@ nav {
 .skills {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: $color_one;
     align-items: center;
     height: 100vh;
 
@@ -164,7 +169,7 @@ nav {
 ************************/
 
 .about {
-    background-color: green;
+    background-color: $color_four;
     color: $text_color;
     height: 100vh;
 
