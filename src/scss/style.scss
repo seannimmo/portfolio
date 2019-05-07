@@ -5,6 +5,7 @@
 $color_one: white;
 $color_two: black;
 $color_three: blue;
+$text_color: white;
 $font_normal: "Merriweather";
 
 html {
@@ -19,7 +20,7 @@ body {
 nav {
     display: flex;
     background-color: black;
-    color: white;
+    color: $text_color;
     justify-content: space-evenly;
     .item {
         flex: 1;
@@ -36,7 +37,7 @@ nav {
 
 .banner{
     background-image: url("/img/trianglify.png");
-    color: white;
+    color: $text_color;
     margin-top: 5rem;
     margin-bottom: 5rem;
     height: 20rem;
@@ -54,8 +55,6 @@ nav {
     padding-bottom: 3rem;
     background-color: black;
     height: 100vh;
-    font-family: $font_normal;
-    font-weight: 800;
 
     .discover {
         display:flex;
@@ -63,8 +62,9 @@ nav {
         margin-left: 2rem;
         margin-right: 2rem;
         flex-direction: column;
-        color: white;
+        color: $text_color;
         text-align: center;
+
         .circle {
             background-color: white;
             margin: auto;
@@ -106,7 +106,7 @@ nav {
             flex-basis: 10rem;
             margin: 0;
             background-color: black;
-            color: white;
+            color: $text_color;
             text-align: center;
         }
 
@@ -133,32 +133,39 @@ nav {
 ***********************/
 
 
-.pictures {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-     height: 100vh;
+.portfolio {
+    height: 100vh;
     margin: auto;
-    background-color: blue;
-    color: white;
+    background-color: $color_three;
 
+    h2 {
+        color: $text_color;
+    }
+
+    .pictures {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        height: 80%;
+    
+    
         .inside {
             background-color: white;
             flex-basis: 25%;
             height: 25%;
             margin: 1rem;   
         }
+    }
 }
-
 /***********************
         ABOUT ME
 ************************/
 
 .about {
     background-color: green;
-    color: white;
+    color: $text_color;
     height: 100vh;
 
     h2 {
@@ -223,7 +230,7 @@ nav {
                 background-color: blue;
                 border: none;
                 border-bottom: 2px solid white;
-                color: white;
+                color: $text_color;
             }
         }
     }
