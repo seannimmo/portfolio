@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+
+$color_one: white;
+$color_two: black;
+$color_three: blue;
+$font_normal: "Merriweather";
+
+html {
+    font-size: 18px;
+    font-family: $font_normal;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+    .item {
+        flex: 1;
+        border: 1px solid white;
+        text-align: center;
+        padding: .3rem;
+        
+    }
+    .logo{
+        background-color: white;
+    }
+    
+}
+
+.banner{
+    background-image: url("/img/trianglify.png");
+    color: white;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    height: 20rem;
+    padding-top: 7rem;
+    text-align: center;
+}
+
+/******************
+        INFO
+*******************/
+
+.home {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+    background-color: black;
+    height: 100vh;
+    font-family: $font_normal;
+    font-weight: 800;
+
+    .discover {
+        display:flex;
+        flex-basis: 7rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        .circle {
+            background-color: white;
+            margin: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 3rem;
+            width: 6rem;
+            border-radius: 0rem 0rem 6rem 6rem;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+/*****************************
+    *SKILLS*
+*******************************/
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    height: 100vh;
+
+    .lang {
+        display:flex;
+        background-color: green;
+        font-size: 15px;
+        width: 40rem;
+        height: 1.5rem;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        .name {
+            flex-basis: 10rem;
+            margin: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .progress{
+            display: flex;
+            width: 40rem;
+            margin: 0;
+            text-align: right;
+
+            .percent {
+                background-color: blue;
+                width: 80%;
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+
+
+/**********************
+      PORTFOLIO
+***********************/
+
+
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+     height: 100vh;
+    margin: auto;
+    background-color: blue;
+    color: white;
+
+        .inside {
+            background-color: white;
+            flex-basis: 25%;
+            height: 25%;
+            margin: 1rem;   
+        }
+}
+
+/***********************
+        ABOUT ME
+************************/
+
+.about {
+    background-color: green;
+    color: white;
+    height: 100vh;
+
+    h2 {
+        text-align: center;
+
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+        height: 80%;
+
+        .image {
+            background-color: white;
+            border-radius: 50%;
+            flex-basis: 50%;
+
+        }
+        .info {
+        flex-basis: 50%;
+
+        }
+    }
+}
+
+/*************************
+        FIND ME
+*************************/
+
+.icons {
+    width: 100%;
+    text-align: center;
+
+    .container{
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+}
+
+/******************
+        CONTACT
+******************/
+
+.contact {
+    background-color: blue;
+
+    form {
+        
+        div {
+            display: flex;
+            justify-content: center;
+            
+        
+            input {
+                background-color: blue;
+                border: none;
+                border-bottom: 2px solid white;
+                color: white;
+            }
+        }
+    }
+}
+
+
+footer {
+    .container{
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+}

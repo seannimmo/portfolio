@@ -9,7 +9,8 @@
         <title>Sean Nimmo</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,800" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -18,14 +19,14 @@
         
         <script src="" async defer></script>
         
-        <section class='nav'>
+        <nav>
             <div class="item logo"></div>
             <div class="item">Home</div>
             <div class="item">Skills</div>
             <div class="item">Portfolio</div>
             <div class="item">About Me</div>
             <div class="item">Contact</div>
-        </section>
+        </nav>
 
         <section class="banner">
                 <h1>Hi My name is Sean Nimmo</h1>
@@ -95,7 +96,7 @@
 
         </section>
 
-        <section>
+        <section class="portfolio">
             <h2>My Portfolio</h2>
 
             <section class="pictures">
@@ -105,13 +106,65 @@
                 <div class="inside"></div>
                 <div class="inside"></div>
                 <div class="inside"></div>
-                
-
-
-
             </section>
+        </section>
+
+        <section class="about">
+            <h2>About Me</h2>
+
+            <div class="container">
+                <div class="image">Hello</div>
+                
+                <div class="info">
+                    <p>My name is Aneta Webbie. I am a full-stack web developer and enjoy learning new trends. I am developing user interfaces in JavaScript and React and backend of my projects in PHP and Laravel.</p> 
+
+                    <p>I am open to learning new technologies and enjoy working with people who are as passionate about all web-related as me.</p>
+                    
+                    <p>I have worked for clients all across the world but currently I am based in Prague, Czech Republic. </p>
+                    
+                    <p>I like cats, gaming, and snowboarding. If I do not develop, you can also meet me trekking in the mountains.</p>
+                </div>
+            </div>
 
         </section>
+
+        <section class="icons">
+            <h2>Find Me Here</h2>
+
+            <div class="container">
+                    <img src="/img/github-brands.svg" alt="github">
+                    <img src="/img/facebook.svg" alt="facebook">
+                    <img src="/img/instagram.svg" alt="instagram">
+            </div>
+
+        </section>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            
+            <form action="" method="get">
+                <div class="simple">
+                    <input type="text" name="first_name" value="" placeholder="first name *"required>
+                    <input type="text" name="last_name" value="" placeholder="last name *"required>
+                    <input type="email" name="email" value="" placeholder="email *"required>
+                    <input type="tel" name="telephone" value="" placeholder="phone">
+                </div>
+
+                <textarea name="message">My Message</textarea>
+            
+                <input type="submit" value="Send my Message">
+
+            </form>
+        </section>
+
+        <footer>
+            <h2>Nice to Meet You</h2>
+            <div class="container">
+                    <img src="/img/github-brands.svg" alt="github">
+                    <img src="/img/facebook.svg" alt="facebook">
+                    <img src="/img/instagram.svg" alt="instagram">
+            </div>
+        </footer>
 
     </body>
 </html>
