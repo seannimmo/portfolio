@@ -22,19 +22,20 @@
         
         <nav>
             <div class="item logo"></div>
-            <div class="item">Home</div>
-            <div class="item">Skills</div>
-            <div class="item">Portfolio</div>
-            <div class="item">About Me</div>
-            <div class="item">Contact</div>
+            <a href="#home" class="item">Home</a>
+            <a href="#skills" class="item">Skills</a>
+            <a href="#portfolio" class="item">Portfolio</a>
+            <a href="#about" class="item">About Me</a>
+            <a href="#contact" class="item">Contact</a>
         </nav>
 
         <section class="banner">
-                <h1>Hi My name is Sean Nimmo</h1>
+                <h1>Hi my name is Sean Nimmo</h1>
+                <h2>I'm a full-stack web developer</h2>
 
         </section>
 
-        <section class="home">
+        <section id="home" class="home">
             <div class="discover"> 
                     <div class="circle"></div>
                 <h2>Discover</h2>
@@ -68,62 +69,75 @@
             </div>
         </section>
 
-        <section class ="skills">
+        <section id ="skills" class ="skills">
             <h2>Skills</h2>
 
             <div class="lang">
-                <h3 class="name">html</h3>
-                <h3 class="progress">
-                    <div class="percent"></div>
-                    80%
-                </h3>
+                <h3 class="name">HTML</h3>
+                <progress max="100" value="80"></progress>
+                
                 
             </div>
+            
             <div class="lang">
                     <h3 class="name">CSS</h3>
-                    <h3 class="progress">
-                        <div class="percent"></div>
-                        60%
-                    </h3>
-            </div>
-            <div class="lang">
-                    <h3 class="name">Javascript</h3>
-                    <h3 class="progress">
-                        <div class="percent"></div>
-                        60%
-                    </h3>
+                    <progress max="100" value="60"></progress>
             </div>
 
+            <div class="lang">
+                    <h3 class="name">Javascript</h3>
+                    <progress max="100" value="80"></progress>
+            </div>
+
+            <div class="lang">
+                    <h3 class="name">PHP</h3>
+                    <progress max="100" value="80"></progress>
+            </div>
+            
+            
 
         </section>
 
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
                 <h2>My Portfolio</h2>
 
             <section class="pictures">
-                <div class="inside"></div>
-                <div class="inside"></div>
-                <div class="inside"></div>
-                <div class="inside"></div>
-                <div class="inside"></div>
-                <div class="inside"></div>
+                <div class="inside">
+                    <p>Project One</p>
+                </div>
+                
+                <div class="inside">
+                    <p>Project Two</p>
+                </div>
+                <div class="inside">
+                    <p>Project Three</p>
+                </div>
+                <div class="inside">
+                    <p>Project Four</p>
+                </div>
+                <div class="inside">
+                    <p>Project Five</p>
+                </div>
+                <div class="inside">
+                    <p>Project Six</p>
+                </div>
             </section>
         </section>
 
-        <section class="about">
+        <section id ="about" class="about">
             <h2>About Me</h2>
 
             <div class="container">
-                <div class="image">Hello</div>
+                
                 
                 <div class="info">
-                    <p>My name is Aneta Webbie. I am a full-stack web developer and enjoy learning new trends. I am developing user interfaces in JavaScript and React and backend of my projects in PHP and Laravel.</p> 
+                    <p>My name is Sean Nimmo. I am a full-stack web developer and enjoy learning new trends. I am developing user interfaces in JavaScript and React and backend of my projects in PHP and Laravel.</p> 
 
                     <p>I am open to learning new technologies and enjoy working with people who are as passionate about all web-related as me.</p>
                     
                     <p>I have worked for clients all across the world but currently I am based in Prague, Czech Republic. </p>
                     
-                    <p>I like cats, gaming, and snowboarding. If I do not develop, you can also meet me trekking in the mountains.</p>
+                    <p>I like dogs, gaming, and snowboarding. If I do not develop, you can also meet me trekking in the mountains.</p>
                 </div>
             </div>
 
@@ -133,37 +147,37 @@
             <h2>Find Me Here</h2>
 
             <div class="container">
-                    <img src="/img/github-brands.svg" alt="github">
-                    <img src="/img/facebook.svg" alt="facebook">
-                    <img src="/img/instagram.svg" alt="instagram">
+                    <a href="https://github.com/seannimmo"><img src="/img/github-brands.svg" alt="github"></a>
+                    <a href="https://www.facebook.com"><img src="/img/facebook.svg" alt="facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="/img/instagram.svg" alt="instagram"></a>
             </div>
 
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <h2>Contact Me</h2>
             
             <form action="" method="get">
                 <div class="simple">
-                    <input type="text" name="first_name" value="" placeholder="first name *"required>
-                    <input type="text" name="last_name" value="" placeholder="last name *"required>
-                    <input type="email" name="email" value="" placeholder="email *"required>
-                    <input type="tel" name="telephone" value="" placeholder="phone">
+                    <input type="text" name="first_name" autocomplete="off" value="" placeholder="first name *"required>
+                    <input type="text" name="last_name" autocomplete="off" value="" placeholder="last name *"required>
+                    <input type="email" name="email" autocomplete="off" value="" placeholder="email *"required>
+                    <input type="tel" name="telephone" autocomplete="off" value="" placeholder="phone">
                 </div>
 
                 <textarea name="message">My Message</textarea>
             
-                <input type="submit" value="Send my Message">
+                <input class="button" type="submit" value="Send">
 
             </form>
         </section>
 
         <footer>
-            <h2>Nice to Meet You</h2>
+            
             <div class="container">
-                    <img src="/img/github-brands.svg" alt="github">
-                    <img src="/img/facebook.svg" alt="facebook">
-                    <img src="/img/instagram.svg" alt="instagram">
+                    <a href="https://github.com/seannimmo"><img src="/img/github-brands.svg" alt="github"></a>
+                    <a href="https://www.facebook.com"><img src="/img/facebook.svg" alt="facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="/img/instagram.svg" alt="instagram"></a>
             </div>
         </footer>
 
